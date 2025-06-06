@@ -1,0 +1,10 @@
+[Unit]
+Description=Script de monitoramento de sistema
+Wants=monitoramento_sistema.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/monitoramento_sistema.sh
+
+[Install]
+WantedBy=multi-user.target
